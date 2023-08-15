@@ -1,4 +1,5 @@
-# Your code goes here.
-# You can delete these comments, but do not change the name of this file
-# Write your code to expect a terminal of 80 characters wide and 24 rows high
-print("Deploy worked!")
+import random
+from simple_term_menu import TerminalMenu
+from words import words
+
+

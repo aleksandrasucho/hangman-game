@@ -1,1 +1,2 @@
-# Your requirements go here
+simple_term_menu-1.6.1
+colorama-0.4.6
