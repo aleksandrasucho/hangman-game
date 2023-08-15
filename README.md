@@ -1,32 +1,78 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
-
-Welcome,
-
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **March 14, 2023**
-
-## Reminders
-
-- Your code must be placed in the `run.py` file
-- Your dependencies must be placed in the `requirements.txt` file
-- Do not edit any of the other files or your code may not deploy properly
-
-## Creating the Heroku app
-
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
-
-1. `heroku/python`
-2. `heroku/nodejs`
-
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
-
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
-
-Connect your GitHub repository and deploy as normal.
-
-## Constraints
-
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
+<h1 align="center">Hangman Game - Project Portfolio 3</h1>
 
 ---
 
-Happy coding!
+# *Hangman Game*
+
+Hangman is a word-guessing game where players attempt to unravel a hidden word by suggesting individual letters. Incorrect guesses result in the gradual formation of a hangman figure, while correct guesses reveal the letters' positions. 
+
+The site can be accessed by this [link](#)
+
+![Responsive Mockup]()
+
+---
+
+## How to play:
+-
+
+## User Stories
+
+### First Time Visitor Goals:
+
+* As a First Time Visitor to the Hangman game, my primary objective is to understand the game's concept and rules. I want to familiarize myself with the idea that I need to guess a hidden word by suggesting individual letters, while also comprehending the consequences of incorrect guesses.
+* As a First Time Visitor, I want to see how many attempts I have left when playing.
+* As a First Time Visitor, 
+* As a First Time Visitor, 
+
+### Returning Visitor Goals:
+
+* As a Returning Visitor, 
+* As a Returning Visitor, 
+* As a Returning Visitor, 
+
+### Frequent Visitor Goals:
+* As a Frequent User, 
+
+---
+
+## Features
+-
+---
+## Technologies Used
+### Languages:
+
+- [Python 3.8.5](https://www.python.org/downloads/release/python-385/): used to anchor the project and direct all application behavior
+
+- [JavaScript](https://www.javascript.com/): used to provide the start script needed to run the Code Institute mock terminal in the browser
+
+- [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) used to construct the elements involved in building the mock terminal in the browser
+
+### Frameworks/Libraries, Programmes and Tools:
+#### Python modules/packages:
+
+##### Standard library imports:
+-
+##### Third-party imports:
+-
+#### Other tools:
+
+- [VSCode](https://code.visualstudio.com/) was used as the main tool to write and edit code.
+- [GitHub](https://github.com/) was used to host the code of the website.
+
+---
+
+## Bugs
+-
+---
+## Testing
+-
+---
+## Deployment
+-
+## Credits
+-
+## Acknowledgments
+
+- [Juliia Konovalova ](https://github.com/IuliiaKonovalova) was a great supporter. She guided me through the development of the project and helped me to learn a lot of new things by challenging me to do something new.
+- [Code Institute](https://codeinstitute.net/) tutors and Slack community members for their support and help.
+
