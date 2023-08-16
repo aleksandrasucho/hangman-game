@@ -99,3 +99,14 @@ ____    ____  ______    __    __     ____    __    ____  __  .__   __.  __
                                                                             
     """
 ]
+
+rules = [
+    "How to play Rules!",
+    "This is a word-guessing extravaganza!",
+    "Guess just 1 letter each time! No alphabet showers, please.",
+    "Oops! A wrong guess costs you a life :( Sorry, it's business, not personal.",
+    "Watch out! Your hangman's gonna start flexing its construction skills.",
+    "Keep it alive! But if your lives hit rock bottom (0), well, things get a bit... hanging.",
+    "No worries, a restart button's your safety net. Phew!",
+    "Play again, triumph, and sport that virtual Hangman champ crown! "
+]
