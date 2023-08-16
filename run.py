@@ -1,5 +1,7 @@
 import random
 import os
+import colorama
+import simple_term_menu
 from colorama import Fore, Style
 from simple_term_menu import TerminalMenu
 from words import easy_words, difficult_words
