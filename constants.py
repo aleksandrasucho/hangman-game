@@ -59,7 +59,7 @@ hangman_stages = [
 ]
 
 # Logo from patorjk.com and a welcome to the player
-logo = [
+LOGO = [
     """
  __    __       ___      .__   __.   _______ .___  ___.      ___      .__   __. 
 |  |  |  |     /   \     |  \ |  |  /  _____||   \/   |     /   \     |  \ |  | 
