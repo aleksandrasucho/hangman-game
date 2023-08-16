@@ -17,3 +17,14 @@ def game_welcome ():
     """
     for logo in LOGO:
         print(f"{Fore.GREEN+Style.BRIGHT}{logo}")
+
+
+
+def main():
+    """
+    Runs all program functions used for the Game
+    """
+    game_welcome()
+    
+    
+main()
