@@ -4,7 +4,7 @@ import colorama
 from colorama import Fore, Style
 from words import easy_words, difficult_words
 from constants import hangman_stages
-from constants import LOGO
+from constants import logo
 from constants import game_over
 from constants import you_win
 
@@ -16,8 +16,8 @@ def game_welcome():
     Game Logo from patorjk.com
     Welcomes the user and asks for the name
     """
-    for logo in LOGO:
-        print(f"{Fore.CYAN+Style.BRIGHT}{logo}")
+    for line in logo:
+        print(f"{Fore.CYAN+Style.BRIGHT}{line}")
     while True:
         name = input(f"{Fore.GREEN+Style.BRIGHT}What is your name?\n").capitalize()
         # Ensures that the user enters a name and this is not left blank
