@@ -1,7 +1,7 @@
 """
 Stores all the things to be used in the game
-Game Logo, Welcome,
-Game Levels Options, Game Rules and Hangman Stages
+Game Logo, Welcome, Game Over, You win,
+Game Rules and Hangman Stages
 """
 
 #Hangman Stages
