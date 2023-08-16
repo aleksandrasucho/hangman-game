@@ -61,13 +61,16 @@ hangman_stages = [
 # Logo from patorjk.com and a welcome to the player
 LOGO = [
     """
+    
  __    __       ___      .__   __.   _______ .___  ___.      ___      .__   __. 
 |  |  |  |     /   \     |  \ |  |  /  _____||   \/   |     /   \     |  \ |  | 
 |  |__|  |    /  ^  \    |   \|  | |  |  __  |  \  /  |    /  ^  \    |   \|  | 
 |   __   |   /  /_\  \   |  . `  | |  | |_ | |  |\/|  |   /  /_\  \   |  . `  | 
 |  |  |  |  /  _____  \  |  |\   | |  |__| | |  |  |  |  /  _____  \  |  |\   | 
 |__|  |__| /__/     \__\ |__| \__|  \______| |__|  |__| /__/     \__\ |__| \__| 
-""",
+                                                                                
+
+    """,
     "Welcome to Hangman!",
     "May your guesses be as clever as a detective's hunch."
 ]
