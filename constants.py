@@ -1,6 +1,6 @@
 """
 Stores all the things to be used in the game
-Game Logo, Welcome, Game Options Menu,
+Game Logo, Welcome,
 Game Levels Options, Game Rules and Hangman Stages
 """
 
@@ -78,4 +78,22 @@ logo = [
 "May your guesses be as clever as a detective's hunch."
 ]
 
+#Game Over announcement
+game_over = [
+    """
 
+    """
+]
+
+#You Win announcement
+you_win = [
+    """
+____    ____  ______    __    __     ____    __    ____  __  .__   __.  __  
+\   \  /   / /  __  \  |  |  |  |    \   \  /  \  /   / |  | |  \ |  | |  | 
+ \   \/   / |  |  |  | |  |  |  |     \   \/    \/   /  |  | |   \|  | |  | 
+  \_    _/  |  |  |  | |  |  |  |      \            /   |  | |  . `  | |  | 
+    |  |    |  `--'  | |  `--'  |       \    /\    /    |  | |  |\   | |__| 
+    |__|     \______/   \______/         \__/  \__/     |__| |__| \__| (__) 
+                                                                            
+    """
+]
