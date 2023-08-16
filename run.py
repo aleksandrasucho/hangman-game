@@ -1,9 +1,7 @@
 import random
 import os
 import colorama
-import simple_term_menu
 from colorama import Fore, Style
-from simple_term_menu import TerminalMenu
 from words import easy_words, difficult_words
 from constants import hangman_stages
 from constants import LOGO
@@ -12,13 +10,28 @@ from constants import you_win
 
 colorama.init(autoreset=True)
 
-def game_welcome ():
+
+def game_welcome():
     """
     Game Logo from patorjk.com
     Welcomes the user and asks for the name
     """
     for logo in LOGO:
-        print(f"{Fore.GREEN+Style.BRIGHT}{logo}")
+        print(f"{Fore.CYAN+Style.BRIGHT}{logo}")
+    while True:
+        name = input(f"{Fore.GREEN+Style.BRIGHT}What is your name?\n").capitalize()
+        # Ensures that the user enters a name and this is not left blank
+        if len(name) == 0:
+            print(f"{Fore.RED+Style.BRIGHT}This is not a valid name!")
+            continue
+        elif not name.isalpha():
+            print(f"{Fore.RED+Style.BRIGHT}Your name must be letters only")
+            continue
+        else:
+            break
+
+
+
 
 
 
