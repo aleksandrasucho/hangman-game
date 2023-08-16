@@ -10,6 +10,8 @@ from constants import LOGO
 from constants import game_over
 from constants import you_win
 
+colorama.init(autoreset=True)
+
 def game_welcome ():
     """
     Game Logo from patorjk.com
