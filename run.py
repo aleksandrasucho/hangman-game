@@ -7,6 +7,7 @@ from constants import hangman_stages
 from constants import logo
 from constants import game_over
 from constants import you_win
+from constants import rules
 
 colorama.init(autoreset=True)
 
@@ -30,6 +31,12 @@ def game_welcome():
         else:
             break
 
+def game_start():
+    """
+    Starts the game off with options of:
+    1. To see the game Rules
+    2. To select level of words difficulty
+    """
 
 
 
