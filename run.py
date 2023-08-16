@@ -14,4 +14,4 @@ def game_welcome ():
     Welcomes the user and asks for the name
     """
     for line in logo:
-        print(f"{Fore.GREEN+Style.BRIGHT}{logo}")
+        print(f"{Fore.GREEN+Style.BRIGHT}{line}")
