@@ -1,12 +1,6 @@
-"""
-Stores all the things to be used in the game
-Game Logo, Welcome, Game Over, You win,
-Game Rules and Hangman Stages
-"""
-
-#Hangman Stages
+# Hangman Stages
 hangman_stages = [
-     # Initial empty state
+    # Initial empty state
     '''
      +---+
          |
@@ -22,7 +16,7 @@ hangman_stages = [
          |
         ===
     ''',
-     # Head and torso
+    # Head and torso
     '''
      +---+
      O   |
@@ -30,7 +24,7 @@ hangman_stages = [
          |
         ===
     ''',
-     # Head, torso, and one arm
+    # Head, torso, and one arm
     '''
      +---+
      O   |
@@ -38,7 +32,7 @@ hangman_stages = [
          |
         ===
     ''',
-     # Head, torso, and both arms
+    # Head, torso, and both arms
     '''
      +---+
      O   |
@@ -54,7 +48,7 @@ hangman_stages = [
     /    |
         ===
     ''',
-     # Final state: head, torso, both arms, and both legs
+    # Final state: head, torso, both arms, and both legs
     '''
      +---+
      O   |
@@ -64,7 +58,7 @@ hangman_stages = [
     '''
 ]
 
-#Logo from  patorjk.com and a welcome to the player
+# Logo from patorjk.com and a welcome to the player
 logo = [
     """
  __    __       ___      .__   __.   _______ .___  ___.      ___      .__   __. 
@@ -74,11 +68,11 @@ logo = [
 |  |  |  |  /  _____  \  |  |\   | |  |__| | |  |  |  |  /  _____  \  |  |\   | 
 |__|  |__| /__/     \__\ |__| \__|  \______| |__|  |__| /__/     \__\ |__| \__| 
 """,
-"Welcome to Hangman!",
-"May your guesses be as clever as a detective's hunch."
+    "Welcome to Hangman!",
+    "May your guesses be as clever as a detective's hunch."
 ]
 
-#Game Over announcement
+# Game Over announcement
 game_over = [
     """
   _______      ___      .___  ___.  _______      ______   ____    ____  _______ .______      
@@ -90,7 +84,7 @@ game_over = [
     """
 ]
 
-#You Win announcement
+# You Win announcement
 you_win = [
     """
 ____    ____  ______    __    __     ____    __    ____  __  .__   __.  __  
