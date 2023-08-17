@@ -8,6 +8,7 @@ from constants import logo
 from constants import game_over
 from constants import you_win
 from constants import rules
+from constants import menu
 
 colorama.init(autoreset=True)
 
