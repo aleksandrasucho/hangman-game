@@ -110,3 +110,8 @@ rules = [
     "No worries, a restart button's your safety net. Phew!",
     "Play again, triumph, and sport that virtual Hangman champ crown! "
 ]
+
+menu = [
+    "Press 1 to Read The Hang-Hangman Rules",
+    "Press 2 to Select the difficulty to play the game"
+]
