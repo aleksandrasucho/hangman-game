@@ -9,6 +9,7 @@ from constants import game_over
 from constants import you_win
 from constants import game_rules
 from constants import menu
+from constants import game_level
 
 colorama.init(autoreset=True)
 
@@ -30,6 +31,7 @@ def game_welcome():
             print(f"{Fore.RED+Style.BRIGHT}Your name must be letters only")
             continue
         else:
+            print(f'Hello, {name}')
             break
 
 def display_rules():
@@ -41,7 +43,18 @@ def clear_screen():
 #Clears the screen https://www.101computing.net/python-typing-text-effect/
     os.system("clear")
 
-
+def select_level():
+#Option of words difficulty
+    for game_levels in game_level:
+        print(f"{Fore.GREEN+Style.BRIGHT}{game_levels}")
+    while True:
+        option = input("\n").upper()
+        if option == "E":
+            return easy_words
+        elif option == "D":
+            return difficult_words
+        else:
+            print(f"{Fore.RED+Style.BRIGHT}Invalid option. Please choose 'E' for Easy or 'D' for Difficult.")
 
 def game_start():
     """
@@ -60,6 +73,7 @@ def game_start():
             print("\n")
             clear_screen()
             return game_start()
+        
         
 
 

@@ -1,3 +1,4 @@
+ 
 #List of easy words
 easy_words = [
     'apple',

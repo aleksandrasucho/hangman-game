@@ -117,6 +117,7 @@ menu = [
     "Press 2 to Select the difficulty to play the game"
 ]
 
+#Gives the player an option to choose difficulty of the words
 game_level = [
     "Select the level you wish to play at.",
     "Press E for Easy words!",
