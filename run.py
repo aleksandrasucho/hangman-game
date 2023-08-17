@@ -32,13 +32,24 @@ def game_welcome():
         else:
             break
 
+def rules():
+#Explains game rules
+    for game_rules in rules:
+        print(f"{Fore.GREEN+Style.BRIGHT}{game_rules}")
+
+
 def game_start():
     """
     Starts the game off with options of:
     1. To see the game Rules
     2. To select level of words difficulty
     """
-
+    for options in menu:
+        print(f"{Fore.GREEN+Style.BRIGHT}{options}")
+    start = False
+    while not start:
+        choice = input("\n")
+        if choice == "1":
 
 
 
@@ -48,5 +59,6 @@ def main():
     Runs all program functions used for the Game
     """
     game_welcome()
+    game_start()
     
 main()

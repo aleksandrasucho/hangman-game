@@ -99,7 +99,7 @@ ____    ____  ______    __    __     ____    __    ____  __  .__   __.  __
                                                                             
     """
 ]
-
+#Game Rules
 rules = [
     "How to play Rules!",
     "This is a word-guessing extravaganza!",
@@ -111,6 +111,7 @@ rules = [
     "Play again, triumph, and sport that virtual Hangman champ crown! "
 ]
 
+#Shows the menu where the player can see the rules and start the game
 menu = [
     "Press 1 to Read The Hang-Hangman Rules",
     "Press 2 to Select the difficulty to play the game"
