@@ -116,3 +116,9 @@ menu = [
     "Press 1 to Read The Hang-Hangman Rules",
     "Press 2 to Select the difficulty to play the game"
 ]
+
+game_level = [
+    "Select the level you wish to play at.",
+    "Press E for Easy words!",
+    "Press D for Difficult words!"
+]

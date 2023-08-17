@@ -36,9 +36,9 @@ def display_rules():
 #Explains game rules
     for game_rule in game_rules:
         print(f"{Fore.GREEN+Style.BRIGHT}{game_rule}")
-        
+
 def clear_screen():
-#Clears the screen
+#Clears the screen https://www.101computing.net/python-typing-text-effect/
     os.system("clear")
 
 
@@ -60,7 +60,7 @@ def game_start():
             print("\n")
             clear_screen()
             return game_start()
-
+        
 
 
 
