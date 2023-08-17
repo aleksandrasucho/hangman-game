@@ -73,7 +73,12 @@ def game_start():
             print("\n")
             clear_screen()
             return game_start()
-        
+        elif choice == "2":
+            selected_level = select_level()
+            start = True
+        else:
+            print(f"{Fore.RED+Style.BRIGHT}Invalid option. Please choose 1 or 2")
+            
         
 
 
