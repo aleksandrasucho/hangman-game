@@ -100,7 +100,7 @@ ____    ____  ______    __    __     ____    __    ____  __  .__   __.  __
     """
 ]
 #Game Rules
-rules = [
+game_rules = [
     "How to play Rules!",
     "This is a word-guessing extravaganza!",
     "Guess just 1 letter each time! No alphabet showers, please.",

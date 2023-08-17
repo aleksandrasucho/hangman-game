@@ -7,7 +7,7 @@ from constants import hangman_stages
 from constants import logo
 from constants import game_over
 from constants import you_win
-from constants import rules
+from constants import game_rules
 from constants import menu
 
 colorama.init(autoreset=True)
@@ -32,10 +32,15 @@ def game_welcome():
         else:
             break
 
-def rules():
+def display_rules():
 #Explains game rules
-    for game_rules in rules:
-        print(f"{Fore.GREEN+Style.BRIGHT}{game_rules}")
+    for game_rule in game_rules:
+        print(f"{Fore.GREEN+Style.BRIGHT}{game_rule}")
+        
+def clear_screen():
+#Clears the screen
+    os.system("clear")
+
 
 
 def game_start():
@@ -50,6 +55,11 @@ def game_start():
     while not start:
         choice = input("\n")
         if choice == "1":
+            display_rules() 
+            input("Enter to return to Menu \n")
+            print("\n")
+            clear_screen()
+            return game_start()
 
 
 
