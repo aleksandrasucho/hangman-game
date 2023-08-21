@@ -36,7 +36,7 @@ def display_rules():
 
 def clear_screen():
 #Clears the screen https://www.101computing.net/python-typing-text-effect/
-    os.system("clear")
+    os.system("cls" if os.name == "nt" else "clear")
 
 def select_level():
 #Option of words difficulty
