@@ -3,13 +3,8 @@ import os
 import colorama
 from colorama import Fore, Style, init
 from words import easy_words, difficult_words
-from constants import hangman_stages
-from constants import logo
-from constants import game_over
-from constants import you_win
-from constants import game_rules
-from constants import menu
-from constants import game_level
+from constants import *
+from game_variables import *
 
 colorama.init(autoreset=True)
 
