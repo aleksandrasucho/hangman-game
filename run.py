@@ -1,5 +1,5 @@
-import random
 import os
+import random
 import colorama
 from colorama import Fore, Style, init
 from words import easy_words, difficult_words
@@ -20,10 +20,10 @@ def game_welcome():
         name = input(f"{Fore.GREEN+Style.BRIGHT}What is your name?\n").capitalize()
         # Ensures that the user enters a name and this is not left blank
         if len(name) == 0:
-            print(f"{Fore.RED+Style.BRIGHT}Your name must be letters only!")
+            print(f"{Fore.RED+Style.BRIGHT}This is not a valid name!")
             continue
         elif not name.isalpha():
-            print(f"{Fore.RED+Style.BRIGHT}Your name must be letters only!")
+            print(f"{Fore.RED+Style.BRIGHT}Your name must be letters only")
             continue
         else:
             print(f'Hello, {name}')
@@ -50,6 +50,19 @@ def select_level():
             return difficult_words
         else:
             print(f"{Fore.RED+Style.BRIGHT}Invalid option. Please choose 'E' for Easy or 'D' for Difficult.")
+            
+
+def random_word(difficulty_level):
+    """Returns a random word based on selected difficulty,
+        the words are contained in an imported list.
+    """
+    if difficulty_level == easy_words:
+        return random.choice(easy_words)
+    elif difficulty_level == difficult_words:
+        return random.choice(difficult_words)
+    else:
+        return None
+
 
 def game_start(name):
     """
@@ -64,7 +77,7 @@ def game_start(name):
         choice = input("\n")
         if choice == "1":
             display_rules() 
-            input("Press Enter to return to Menu \n")
+            input("Enter to return to Menu \n")
             print("\n")
             clear_screen()
             return game_start(name)
