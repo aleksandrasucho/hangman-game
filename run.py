@@ -1,7 +1,7 @@
 import random
 import os
 import colorama
-from colorama import Fore, Style
+from colorama import Fore, Style, init
 from words import easy_words, difficult_words
 from constants import hangman_stages
 from constants import logo
