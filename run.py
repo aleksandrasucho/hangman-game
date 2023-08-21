@@ -56,7 +56,7 @@ def select_level():
         else:
             print(f"{Fore.RED+Style.BRIGHT}Invalid option. Please choose 'E' for Easy or 'D' for Difficult.")
 
-def game_start():
+def game_start(name):
     """
     Starts the game off with options of:
     1. To see the game Rules
@@ -72,7 +72,7 @@ def game_start():
             input("Enter to return to Menu \n")
             print("\n")
             clear_screen()
-            return game_start()
+            return game_start(name)
         elif choice == "2":
             selected_level = select_level()
             start = True
@@ -84,10 +84,8 @@ def game_start():
 
 
 def main():
-    """
-    Runs all program functions used for the Game
-    """
-    game_welcome()
-    game_start()
+    """Runs all program functions used for the Game"""
+    name = game_welcome()
+    game_start(name)
     
 main()
