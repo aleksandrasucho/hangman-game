@@ -1,3 +1,4 @@
+
 # Hangman Stages
 hangman_stages = [
     # Initial empty state
@@ -57,6 +58,8 @@ hangman_stages = [
         ===
     '''
 ]
+
+MAX_INCORRECT_GUESSES = 6
 
 # Logo from patorjk.com and a welcome to the player
 logo = [
