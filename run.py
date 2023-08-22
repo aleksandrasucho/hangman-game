@@ -137,7 +137,7 @@ def game_start(name):
             if guess in word_to_guess:
                 if all(letter in guessed_letters for letter in word_to_guess):
                     display_game_state(word_to_guess, guessed_letters)
-                    print(f"{Fore.GREEN+Style.BRIGHT}{you_win}")
+                    display_you_win()
                     break
             else:
                 remaining_lives -= 1
@@ -150,6 +150,10 @@ def display_game_over():
     for you_lose in game_over:
         print(f"{Fore.RED+Style.BRIGHT}{you_lose}")
     
+    
+def display_you_win():
+    for you_won in you_win:
+        print(f"{Fore.RED+Style.BRIGHT}{you_won}")
 
 def main():
     """Runs all program functions used for the Game"""
