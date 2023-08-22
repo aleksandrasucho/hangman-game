@@ -144,9 +144,12 @@ def game_start(name):
                 print(f"Incorrect guess! You have {remaining_lives} lives left.")
                 
             if remaining_lives == 0:
-                print(f"{Fore.GREEN+Style.BRIGHT}{game_over}")
+                display_game_over()
 
-
+def display_game_over():
+    for you_lose in game_over:
+        print(f"{Fore.RED+Style.BRIGHT}{you_lose}")
+    
 
 def main():
     """Runs all program functions used for the Game"""
