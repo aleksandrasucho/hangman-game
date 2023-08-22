@@ -36,7 +36,11 @@ def display_rules():
 
 def clear_screen():
 #Clears the screen https://www.101computing.net/python-typing-text-effect/
-    os.system("cls" if os.name == "nt" else "clear")
+    if os.name == "nt":
+        os.system('cls')
+    else: 
+        os.system('clear')
+
 
 def select_level():
 #Option of words difficulty
@@ -62,6 +66,8 @@ def random_word(difficulty_level):
         return random.choice(difficult_words)
     else:
         return None
+    
+
 
 
 def game_start(name):
@@ -77,7 +83,7 @@ def game_start(name):
         choice = input("\n")
         if choice == "1":
             display_rules() 
-            input("Enter to return to Menu \n")
+            input("Press Enter to return to Menu \n")
             print("\n")
             clear_screen()
             return game_start(name)
