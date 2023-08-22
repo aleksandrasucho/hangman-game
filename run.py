@@ -68,7 +68,26 @@ def random_word(difficulty_level):
         return None
     
 
+def hangman_lives(lives):
+    """Displays Hangman stages"""
+    for stage in hangman_stages[:lives+1]:
+        print(stage)
 
+
+def display_game_state(word_to_guess, guessed_letters):
+    display_word = ""
+    for letter in word_to_guess:
+        if letter in guessed_letters:
+            display_word += letter
+        else:
+            display_word += "_"
+    print(f"Word to guess: {display_word}")
+    print(f"Guessed letters: {', '.join(guessed_letters)}")
+    
+    
+def get_player_guess():
+    guess = input("Guess a letter: ").lower()
+    return guess
 
 def game_start(name):
     """
@@ -92,8 +111,40 @@ def game_start(name):
             start = True
         else:
             print(f"{Fore.RED+Style.BRIGHT}Invalid option. Please choose 1 or 2")
-            
+    if start:
+        word_to_guess = random_word(selected_level)
+        guessed_letters = []
+        remaining_lives = MAX_INCORRECT_GUESSES
         
+        while remaining_lives > 0:
+            #Display Hangman stage
+            hangman_lives(MAX_INCORRECT_GUESSES - remaining_lives)
+            
+            #Display game state and get player's guess
+            display_game_state(word_to_guess, guessed_letters)
+            guess = get_player_guess()
+            
+            if len(guess) != 1 or not guess.isalpha():
+                print("Please enter a valid letter.")
+                continue
+            
+            if guess in guessed_letters:
+                print("You've already guessed that letter.")
+                continue
+            
+            guessed_letters.append(guess)
+            
+            if guess in word_to_guess:
+                if all(letter in guessed_letters for letter in word_to_guess):
+                    display_game_state(word_to_guess, guessed_letters)
+                    print(f"{Fore.GREEN+Style.BRIGHT}{you_win}")
+                    break
+            else:
+                remaining_lives -= 1
+                print(f"Incorrect guess! You have {remaining_lives} lives left.")
+                
+            if remaining_lives == 0:
+                print(f"{Fore.GREEN+Style.BRIGHT}{game_over}")
 
 
 

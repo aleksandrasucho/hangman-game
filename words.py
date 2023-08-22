@@ -1,7 +1,6 @@
- 
 #List of easy words
 easy_words = [
-     'lumpy',
+    'lumpy',
     'respect',
     'count',
     'waggish',
