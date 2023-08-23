@@ -122,6 +122,7 @@ def game_start(name):
             
             #Display game state and get player's guess
             display_game_state(word_to_guess, guessed_letters)
+            print(f"Remaining lives: {remaining_lives}")
             guess = get_player_guess()
             
             if len(guess) != 1 or not guess.isalpha():
