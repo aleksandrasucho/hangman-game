@@ -80,7 +80,7 @@ def display_game_state(word_to_guess, guessed_letters):
         if letter in guessed_letters:
             display_word += letter
         else:
-            display_word += "_"
+            display_word += "_ "
     print(f"Word to guess: {display_word}")
     print(f"Guessed letters: {', '.join(guessed_letters)}")
     
