@@ -127,10 +127,10 @@ def play_game():
         guess = get_player_guess()
 
         if len(guess) != 1 or not guess.isalpha():
-            print("Please enter a valid letter.")
+            print(f"{Fore.RED+Style.BRIGHT}Please enter a valid letter.")
         else:
             if guess in guessed_letters:
-                print("You've already guessed that letter.")
+                print(f"{Fore.RED+Style.BRIGHT}You've already guessed that letter.")
             else:
                 guessed_letters.append(guess)
                 if guess in word_to_guess:
