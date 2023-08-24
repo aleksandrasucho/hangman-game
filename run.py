@@ -112,40 +112,39 @@ def game_start(name):
         else:
             print(f"{Fore.RED+Style.BRIGHT}Invalid option. Please choose 1 or 2")
     if start:
-        word_to_guess = random_word(selected_level)
-        guessed_letters = []
-        remaining_lives = MAX_INCORRECT_GUESSES
-        
-        while remaining_lives > 0:
-            #Display Hangman stage
-            hangman_lives(MAX_INCORRECT_GUESSES - remaining_lives)
-            
-            #Display game state and get player's guess
-            display_game_state(word_to_guess, guessed_letters)
-            print(f"Remaining lives: {remaining_lives}")
-            guess = get_player_guess()
-            
-            if len(guess) != 1 or not guess.isalpha():
-                print("Please enter a valid letter.")
-                continue
-            
+        play_game()
+
+def play_game():
+    selected_level = select_level()
+    word_to_guess = random_word(selected_level)
+    guessed_letters = []
+    remaining_lives = MAX_INCORRECT_GUESSES
+    
+    while remaining_lives > 0:
+        hangman_lives(MAX_INCORRECT_GUESSES - remaining_lives)
+        display_game_state(word_to_guess, guessed_letters)
+        print(f"Remaining lives: {remaining_lives}")
+        guess = get_player_guess()
+
+        if len(guess) != 1 or not guess.isalpha():
+            print("Please enter a valid letter.")
+        else:
             if guess in guessed_letters:
                 print("You've already guessed that letter.")
-                continue
-            
-            guessed_letters.append(guess)
-            
-            if guess in word_to_guess:
-                if all(letter in guessed_letters for letter in word_to_guess):
-                    display_game_state(word_to_guess, guessed_letters)
-                    display_you_win()
-                    break
             else:
-                remaining_lives -= 1
-                print(f"Incorrect guess! You have {remaining_lives} lives left.")
-                
-            if remaining_lives == 0:
-                display_game_over()
+                guessed_letters.append(guess)
+                if guess in word_to_guess:
+                    if all(letter in guessed_letters for letter in word_to_guess):
+                        display_game_state(word_to_guess, guessed_letters)
+                        display_you_win()
+                        return True
+                else:
+                    remaining_lives -= 1
+                    print(f"Incorrect guess! You have {remaining_lives} lives left.")
+
+    display_game_over()
+    return False
+
 
 def display_game_over():
     for you_lose in game_over:
@@ -159,6 +158,11 @@ def display_you_win():
 def main():
     """Runs all program functions used for the Game"""
     name = game_welcome()
-    game_start(name)
+    
+    while True:
+        game_start(name)
+        play_again = input("Do you want to play again? (yes/no): ").lower()
+        if play_again != "yes":
+            break
     
 main()
