@@ -99,16 +99,19 @@ def game_start(name):
     while not start:
         choice = input("\n")
         if choice == "1":
+            clear_screen()
             display_rules() 
             input("Press Enter to return to Menu \n")
             print("\n")
             clear_screen()
             return game_start(name)
         elif choice == "2":
+            clear_screen()
             selected_level = select_level()
             start = True
         else:
             print(f"{Fore.RED+Style.BRIGHT}Invalid option. Please choose 1 or 2")
+            clear_screen()
     if start:
         play_game()
 
