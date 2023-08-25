@@ -141,13 +141,14 @@ def play_game():
                     remaining_lives -= 1
                     print(f"Incorrect guess! You have {remaining_lives} lives left.")
 
-    display_game_over()
+    display_game_over(word_to_guess)
     return False
 
 
-def display_game_over():
+def display_game_over(word_to_guess):
     for you_lose in game_over:
         print(f"{Fore.RED+Style.BRIGHT}{you_lose}")
+    print(f"{Fore.RED+Style.BRIGHT}The word you couldn't guess was: {word_to_guess}")
     
     
 def display_you_win():
