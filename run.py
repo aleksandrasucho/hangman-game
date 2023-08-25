@@ -69,8 +69,7 @@ def random_word(difficulty_level):
 
 def hangman_lives(lives):
     """Displays Hangman stages"""
-    for stage in hangman_stages[:lives+1]:
-        print(stage)
+    print(hangman_stages[lives])
 
 
 def display_game_state(word_to_guess, guessed_letters):
@@ -120,6 +119,7 @@ def play_game():
     remaining_lives = MAX_INCORRECT_GUESSES
     
     while remaining_lives > 0:
+        clear_screen()
         hangman_lives(MAX_INCORRECT_GUESSES - remaining_lives)
         display_game_state(word_to_guess, guessed_letters)
         print(f"Remaining lives: {remaining_lives}")
@@ -140,7 +140,7 @@ def play_game():
                 else:
                     remaining_lives -= 1
                     print(f"Incorrect guess! You have {remaining_lives} lives left.")
-
+    clear_screen()
     display_game_over(word_to_guess)
     return False
 
