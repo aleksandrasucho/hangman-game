@@ -42,7 +42,7 @@ def clear_screen():
 
 
 def select_level():
-#Option of words difficulty
+    """Option of words difficulty"""
     for game_levels in game_level:
         print(f"{Fore.GREEN+Style.BRIGHT}{game_levels}")
     while True:
@@ -162,6 +162,8 @@ def main():
         game_start(name)
         play_again = input("Do you want to play again? (Y/N): ").lower()
         if play_again != "Y":
+            #Clear the terminal
+            clear_screen()
             print(f"{Fore.GREEN+Style.BRIGHT}Thanks for playing the game!")
             break
         
