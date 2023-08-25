@@ -1,12 +1,11 @@
 import os
 import random
-import colorama
 from colorama import Fore, Style, init
 from words import easy_words, difficult_words
 from constants import *
 from game_variables import *
 
-colorama.init(autoreset=True)
+init(autoreset=True)
 
 
 def game_welcome():
@@ -161,8 +160,10 @@ def main():
     
     while True:
         game_start(name)
-        play_again = input("Do you want to play again? (yes/no): ").lower()
-        if play_again != "yes":
+        play_again = input("Do you want to play again? (Y/N): ").lower()
+        if play_again != "Y":
+            print(f"{Fore.GREEN+Style.BRIGHT}Thanks for playing the game!")
             break
+        
     
 main()
