@@ -157,7 +157,7 @@ def display_game_over(word_to_guess):
     
 def display_you_win():
     for you_won in you_win:
-        print(f"{Fore.RED+Style.BRIGHT}{you_won}")
+        print(f"{Fore.GREEN+Style.BRIGHT}{you_won}")
         
 
 def play_again():
