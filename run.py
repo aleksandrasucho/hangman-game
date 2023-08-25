@@ -130,6 +130,7 @@ def play_game():
         else:
             if guess in guessed_letters:
                 print(f"{Fore.RED+Style.BRIGHT}You've already guessed that letter.")
+                continue
             else:
                 guessed_letters.append(guess)
                 if guess in word_to_guess:
@@ -171,6 +172,7 @@ def main():
             clear_screen()
             print(f"{Fore.GREEN+Style.BRIGHT}Thanks for playing the game!")
             break
-        
+        else:
+            clear_screen()
     
 main()
