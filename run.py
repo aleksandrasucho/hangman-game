@@ -153,6 +153,11 @@ def display_game_over():
 def display_you_win():
     for you_won in you_win:
         print(f"{Fore.RED+Style.BRIGHT}{you_won}")
+        
+
+def play_again():
+    play_again_input = input("Do you want to play again? (Y/N): ").lower()
+    return play_again_input == "y"
 
 def main():
     """Runs all program functions used for the Game"""
@@ -160,9 +165,8 @@ def main():
     
     while True:
         game_start(name)
-        play_again = input("Do you want to play again? (Y/N): ").lower()
-        if play_again != "Y":
-            #Clear the terminal
+        if not play_again():
+            # Clear the terminal
             clear_screen()
             print(f"{Fore.GREEN+Style.BRIGHT}Thanks for playing the game!")
             break
