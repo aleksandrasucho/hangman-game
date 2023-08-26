@@ -126,16 +126,24 @@ def play_game():
     guessed_letters = []
     remaining_lives = MAX_INCORRECT_GUESSES
     
+    # Display hangman stages only once at the beginning
+    clear_screen()
+    hangman_lives(MAX_INCORRECT_GUESSES - remaining_lives)
+    
     # Main game loop
     while remaining_lives > 0:
-        clear_screen()
-        # Display hangman stages based on remaining lives
-        hangman_lives(MAX_INCORRECT_GUESSES - remaining_lives)
         # Display the current game state
         display_game_state(word_to_guess, guessed_letters)
         print(f"Remaining lives: {remaining_lives}")
+        
         # Get the player's guess
         guess = get_player_guess()
+        
+        # Clear the screen after getting the guess
+        clear_screen()
+        
+        # Display hangman stages
+        hangman_lives(MAX_INCORRECT_GUESSES - remaining_lives)
         
         # Check if the player's input is a valid single letter
         if len(guess) != 1 or not guess.isalpha():
@@ -143,7 +151,6 @@ def play_game():
         else:
             if guess in guessed_letters:
                 print(f"{Fore.RED+Style.BRIGHT}You've already guessed that letter.")
-                continue
             else:
                 guessed_letters.append(guess)
                 # Check if the guessed letter is in the word to guess
@@ -157,9 +164,9 @@ def play_game():
                     # Decrement remaining lives and display feedback
                     remaining_lives -= 1
                     print(f"Incorrect guess! You have {remaining_lives} lives left.")
-
+    
     # Game over: no remaining lives
-    clear_screen()
+    display_game_state(word_to_guess, guessed_letters)  # Display the final state
     display_game_over(word_to_guess)
     return False
 
