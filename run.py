@@ -108,12 +108,12 @@ def game_start(name):
             clear_screen()
             return game_start(name)
         elif choice == "2":
+            clear_screen()
             start = True
         else:
             print(f"{Fore.RED+Style.BRIGHT}Invalid option. Please choose 1 or 2")
             clear_screen()
     if start:
-        clear_screen()
         play_game()
 
 def play_game():
