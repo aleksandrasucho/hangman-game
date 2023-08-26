@@ -113,6 +113,7 @@ def game_start(name):
             print(f"{Fore.RED+Style.BRIGHT}Invalid option. Please choose 1 or 2")
             clear_screen()
     if start:
+        clear_screen()
         play_game()
 
 def play_game():
