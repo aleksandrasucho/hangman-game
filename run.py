@@ -163,7 +163,7 @@ def play_game():
                 else:
                     # Decrement remaining lives and display feedback
                     remaining_lives -= 1
-                    print(f"Incorrect guess! You have {remaining_lives} lives left.")
+                    print(f"{Fore.RED+Style.BRIGHT}Incorrect guess! You have {remaining_lives} lives left.")
     
     # Game over: no remaining lives
     clear_screen()
