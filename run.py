@@ -166,7 +166,7 @@ def play_game():
                     print(f"Incorrect guess! You have {remaining_lives} lives left.")
     
     # Game over: no remaining lives
-    display_game_state(word_to_guess, guessed_letters)  # Display the final state
+    clear_screen()
     display_game_over(word_to_guess)
     return False
 
