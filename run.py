@@ -29,12 +29,12 @@ def game_welcome():
             break
 
 def display_rules():
-#Explains game rules
+    """Explains game rules"""
     for game_rule in game_rules:
         print(f"{Fore.GREEN+Style.BRIGHT}{game_rule}")
 
 def clear_screen():
-#Clears the screen https://www.101computing.net/python-typing-text-effect/
+    """Clears the screan"""
     if os.name == "nt":
         os.system('cls')
     else: 
@@ -73,6 +73,7 @@ def hangman_lives(lives):
 
 
 def display_game_state(word_to_guess, guessed_letters):
+    """Displays game state"""
     display_word = ""
     for letter in word_to_guess:
         if letter in guessed_letters:
@@ -84,6 +85,7 @@ def display_game_state(word_to_guess, guessed_letters):
     
     
 def get_player_guess():
+    """Function to get the player's guess"""
     guess = input("Guess a letter: ").lower()
     return guess
 
@@ -114,18 +116,27 @@ def game_start(name):
         play_game()
 
 def play_game():
+    """Function to play the game"""
+    # Select the difficulty level
     selected_level = select_level()
+    # Get a random word based on the selected difficulty level
     word_to_guess = random_word(selected_level)
+    # Initialize variables for guessed letters and remaining lives
     guessed_letters = []
     remaining_lives = MAX_INCORRECT_GUESSES
     
+    # Main game loop
     while remaining_lives > 0:
         clear_screen()
+        # Display hangman stages based on remaining lives
         hangman_lives(MAX_INCORRECT_GUESSES - remaining_lives)
+        # Display the current game state
         display_game_state(word_to_guess, guessed_letters)
         print(f"Remaining lives: {remaining_lives}")
+        # Get the player's guess
         guess = get_player_guess()
-
+        
+        # Check if the player's input is a valid single letter
         if len(guess) != 1 or not guess.isalpha():
             print(f"{Fore.RED+Style.BRIGHT}Please enter a valid letter.")
         else:
@@ -134,31 +145,39 @@ def play_game():
                 continue
             else:
                 guessed_letters.append(guess)
+                # Check if the guessed letter is in the word to guess
                 if guess in word_to_guess:
+                    # Check if all letters in the word have been guessed
                     if all(letter in guessed_letters for letter in word_to_guess):
                         display_game_state(word_to_guess, guessed_letters)
                         display_you_win()
                         return True
                 else:
+                    # Decrement remaining lives and display feedback
                     remaining_lives -= 1
                     print(f"Incorrect guess! You have {remaining_lives} lives left.")
+
+    # Game over: no remaining lives
     clear_screen()
     display_game_over(word_to_guess)
     return False
 
 
 def display_game_over(word_to_guess):
+    """Displayes Game Over logo"""
     for you_lose in game_over:
         print(f"{Fore.RED+Style.BRIGHT}{you_lose}")
     print(f"{Fore.RED+Style.BRIGHT}The word you couldn't guess was: {word_to_guess}")
     
     
 def display_you_win():
+    """Displays You Won logo"""
     for you_won in you_win:
         print(f"{Fore.GREEN+Style.BRIGHT}{you_won}")
         
 
 def play_again():
+    """Play again option"""
     play_again_input = input("Do you want to play again? (Y/N): ").lower()
     return play_again_input == "y"
 
