@@ -6,14 +6,23 @@
 
 Hangman is a word-guessing game where players attempt to unravel a hidden word by suggesting individual letters. Incorrect guesses result in the gradual formation of a hangman figure, while correct guesses reveal the letters' positions. 
 
-The site can be accessed by this [link](#)
-
-![Responsive Mockup]()
+The site can be accessed by this [link](https://hang-man-game55-2e55bd9f26a2.herokuapp.com/)
 
 ---
 
 ## How to play:
--
+1. Click this *[link](https://hang-man-game55-2e55bd9f26a2.herokuapp.com/)* or copy this text: `https://hang-man-game55-2e55bd9f26a2.herokuapp.com/` and paste it in your browser's address bar.
+1. As soon as the page is loaded, click 'RUN PROGRAM'.
+1. Introduce yourself to the program.
+1. Learn the rules.
+1. Select the difficulty of words to play the game. 
+1. After selecting the difficulty level, the game begins.
+1. A secret word will be chosen, and its letters are represented by blank spaces.
+1. Start guessing letters one by one. Each correct letter guess reveals its position in the word.
+1. Be cautious! Incorrect letter guesses cost you one life.
+1. You win if you correctly guess all the letters in the word before running out of lives. The hidden word will be revealed, and you'll emerge victorious!
+1. If you lose all 6 lives before guessing the word, the hangman is fully hanged, and the game ends.
+
 
 ## User Stories
 
