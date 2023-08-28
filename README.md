@@ -46,7 +46,7 @@ The site can be accessed by this [link](https://hang-man-game55-2e55bd9f26a2.her
 
   The user can see a welcoming message and the polite question to enter the user's name:
   
-  ![loading Program](documentation/features/feature%201-min.PNG)
+  ![loading Program](documentation/features/feature-1-min.PNG)
 
    - **When the user types a name.**
 
@@ -67,7 +67,7 @@ The site can be accessed by this [link](https://hang-man-game55-2e55bd9f26a2.her
   The user will see the main rules of the game which are required to be followed.
   Below the rules, the user will find a message instructing them to press the "Enter" key if they wish to return to the main menu.
 
-  ![Rules Program](documentation/features/feature%203-min.PNG)
+  ![Rules Program](documentation/features/feature-3-min.PNG)
 
    - **When the user chose "Select the difficulty to play the game"**
 
