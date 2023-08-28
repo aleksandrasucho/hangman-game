@@ -60,14 +60,14 @@ The site can be accessed by this [link](https://hang-man-game55-2e55bd9f26a2.her
 
 - The user must choose by pressing either 1 or 2, based on their preference.
 
-      ![Menu Program](documentation/features/feature2-min.PNG)
+![Menu Program](documentation/features/feature2-min.PNG)
 
- - **When the user chose "Read the Hangman Rules"**
+- **When the user chose "Read the Hangman Rules"**
 
   The user will see the main rules of the game which are required to be followed.
   Below the rules, the user will find a message instructing them to press the "Enter" key if they wish to return to the main menu.
 
-  ![Rules Program](documentation/features/feature-3-min.PNG)
+![Rules Program](documentation/features/feature-3-min.PNG)
 
    - **When the user chose "Select the difficulty to play the game"**
 
@@ -82,7 +82,7 @@ The site can be accessed by this [link](https://hang-man-game55-2e55bd9f26a2.her
   1. Press D for Difficult words;
 
 
-  ![Difficulty Program](documentation/features/feature4-min.PNG)
+![Difficulty Program](documentation/features/feature4-min.PNG)
 
 - The user must choose by pressing either E or D, based on their preferred difficulty level for playing the game.
 
@@ -93,21 +93,21 @@ The site can be accessed by this [link](https://hang-man-game55-2e55bd9f26a2.her
 - Remaining lives
 - Guessed letters
 
-  ![Game Program](documentation/features/feature5-min.PNG)
+![Game Program](documentation/features/feature5-min.PNG)
 
 - **When the user guesses the wrong letter**
 
   If user guesses the wrong letter, a message will be displayed saying: 
   - "Incorrect guess! You have (number of lives left) lives left"
 
-  ![Game Program](documentation/features/feature6-min.PNG)
+![Game Program](documentation/features/feature6-min.PNG)
 
 - **When the user guesses the same letter as before**
     
     If user guessed the same letter as before, a message will be displayed saying: 
   - "(user name), You've already guessed that letter"
   
-  ![Game Program](documentation/features/feature7-min.PNG)
+![Game Program](documentation/features/feature7-min.PNG)
 
 - **When the user wins**
     If the user has successfully guessed all the letters correctly, a customized "You Win" message will be displayed. Underneath this message, the following question will be presented:
@@ -116,13 +116,15 @@ The site can be accessed by this [link](https://hang-man-game55-2e55bd9f26a2.her
 
   The user will have the option to choose by pressing either "Y" to indicate they want to play again, or "N" to indicate they want to end the game.
 
-  ![Game Program](documentation/features/feature8-min.PNG)
+![Game Program](documentation/features/feature8-min.PNG)
 
 - When the user chooses 'Y,' they will be directed to the main menu.
-  ![Play Again Program](documentation/features/feature9-min.PNG)
+
+![Play Again Program](documentation/features/feature9-min.PNG)
 
 - When the user chooses 'N,' they will be directed to the exit screen that will display the following message: "Thanks for playing the game! 
-  ![Exit Program](documentation/features/feature10-min.PNG)
+
+![Exit Program](documentation/features/feature10-min.PNG)
 
 - **When the user loses**
     If the user hasn't guessed the word, a customized 'Game Over' message will be displayed. Underneath this message, the following question will be presented:
@@ -131,7 +133,7 @@ The site can be accessed by this [link](https://hang-man-game55-2e55bd9f26a2.her
 
   The user will have the option to choose by pressing either "Y" to indicate they want to play again, or "N" to indicate they want to end the game.
 
-  ![Game Program](documentation/features/feature11-min.PNG)
+![Game Program](documentation/features/feature11-min.PNG)
 
 
 ---
