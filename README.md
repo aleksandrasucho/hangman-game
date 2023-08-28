@@ -41,7 +41,99 @@ The site can be accessed by this [link](https://hang-man-game55-2e55bd9f26a2.her
 ---
 
 ## Features
--
+  
+  - **When the program is loaded**
+
+  The user can see a welcoming message and the polite question to enter the user's name:
+  
+  ![loading Program](documentation/features/feature%201-min.PNG)
+
+   - **When the user types a name.**
+
+  - Sends personal greetings and short instruction on the next step;
+  
+  - Shows the  menu with two options:
+
+    1. Press 1 to Read the Hangman Rules
+
+    1.  Press 2 to Select the difficulty to play the game
+
+- The user must choose by pressing either 1 or 2, based on their preference.
+
+      ![Menu Program](documentation/features/feature2-min.PNG)
+
+ - **When the user chose "Read the Hangman Rules"**
+
+  The user will see the main rules of the game which are required to be followed.
+  Below the rules, the user will find a message instructing them to press the "Enter" key if they wish to return to the main menu.
+
+  ![Rules Program](documentation/features/feature%203-min.PNG)
+
+   - **When the user chose "Select the difficulty to play the game"**
+
+  The program will display the message:
+
+  - "Select the level you wish to play at." 
+  
+  Along with the following menu:
+
+  1. Press E for Easy words;
+
+  1. Press D for Difficult words;
+
+
+  ![Difficulty Program](documentation/features/feature4-min.PNG)
+
+- The user must choose by pressing either E or D, based on their preferred difficulty level for playing the game.
+
+- **When the user chose a difficulty**
+
+  The main game screen provides all information regarding the users current game of hangman. This includes:
+- Word to guess
+- Remaining lives
+- Guessed letters
+
+  ![Game Program](documentation/features/feature5-min.PNG)
+
+- **When the user guesses the wrong letter**
+
+  If user guesses the wrong letter, a message will be displayed saying: 
+  - "Incorrect guess! You have (number of lives left) lives left"
+
+  ![Game Program](documentation/features/feature6-min.PNG)
+
+- **When the user guesses the same letter as before**
+    
+    If user guessed the same letter as before, a message will be displayed saying: 
+  - "(user name), You've already guessed that letter"
+  
+  ![Game Program](documentation/features/feature7-min.PNG)
+
+- **When the user wins**
+    If the user has successfully guessed all the letters correctly, a customized "You Win" message will be displayed. Underneath this message, the following question will be presented:
+        
+    - "Do you want to play again? (Y/N)"
+
+  The user will have the option to choose by pressing either "Y" to indicate they want to play again, or "N" to indicate they want to end the game.
+
+  ![Game Program](documentation/features/feature8-min.PNG)
+
+- When the user chooses 'Y,' they will be directed to the main menu.
+  ![Play Again Program](documentation/features/feature9-min.PNG)
+
+- When the user chooses 'N,' they will be directed to the exit screen that will display the following message: "Thanks for playing the game! 
+  ![Exit Program](documentation/features/feature10-min.PNG)
+
+- **When the user loses**
+    If the user hasn't guessed the word, a customized 'Game Over' message will be displayed. Underneath this message, the following question will be presented:
+        
+    - "Do you want to play again? (Y/N)"
+
+  The user will have the option to choose by pressing either "Y" to indicate they want to play again, or "N" to indicate they want to end the game.
+
+  ![Game Program](documentation/features/feature11-min.PNG)
+
+
 ---
 ## Technologies Used
 ### Languages:

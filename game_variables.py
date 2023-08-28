@@ -12,7 +12,7 @@ game_rules = [
 
 #Shows the menu where the player can see the rules and start the game
 menu = [
-    "Press 1 to Read The Hang-Hangman Rules",
+    "Press 1 to Read The Hangman Rules",
     "Press 2 to Select the difficulty to play the game"
 ]
 
