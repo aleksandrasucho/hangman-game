@@ -26,7 +26,7 @@ def game_welcome():
             continue
         else:
             print(f'Hello, {name}')
-            break
+            return name
 
 def display_rules():
     """Explains game rules"""
@@ -106,7 +106,7 @@ def game_start(name):
             input("Press Enter to return to Menu \n")
             print("\n")
             clear_screen()
-            return game_start(name)
+            return game_start()
         elif choice == "2":
             clear_screen()
             start = True
@@ -114,9 +114,9 @@ def game_start(name):
             print(f"{Fore.RED+Style.BRIGHT}Invalid option. Please choose 1 or 2")
             clear_screen()
     if start:
-        play_game()
+        play_game(name)
 
-def play_game():
+def play_game(name):
     """Function to play the game"""
     # Select the difficulty level
     selected_level = select_level()
@@ -147,10 +147,10 @@ def play_game():
         
         # Check if the player's input is a valid single letter
         if len(guess) != 1 or not guess.isalpha():
-            print(f"{Fore.RED+Style.BRIGHT}Please enter a valid letter.")
+            print(f"{Fore.RED+Style.BRIGHT}{name}, please enter a valid letter.")
         else:
             if guess in guessed_letters:
-                print(f"{Fore.RED+Style.BRIGHT}You've already guessed that letter.")
+                print(f"{Fore.RED+Style.BRIGHT}{name}, You've already guessed that letter.")
             else:
                 guessed_letters.append(guess)
                 # Check if the guessed letter is in the word to guess
@@ -175,7 +175,7 @@ def display_game_over(word_to_guess):
     """Displayes Game Over logo"""
     for you_lose in game_over:
         print(f"{Fore.RED+Style.BRIGHT}{you_lose}")
-    print(f"{Fore.RED+Style.BRIGHT}The word you couldn't guess was: {word_to_guess}")
+    print(f"{Fore.RED+Style.BRIGHT}Sorry the word you couldn't guess was: {word_to_guess}")
     
     
 def display_you_win():
@@ -198,7 +198,7 @@ def main():
         if not play_again():
             # Clear the terminal
             clear_screen()
-            print(f"{Fore.GREEN+Style.BRIGHT}Thanks for playing the game!")
+            print(f"{Fore.GREEN+Style.BRIGHT}Thanks for playing the game {name}!")
             break
         else:
             clear_screen()
