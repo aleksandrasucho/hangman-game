@@ -106,7 +106,7 @@ def game_start(name):
             input("Press Enter to return to Menu \n")
             print("\n")
             clear_screen()
-            return game_start()
+            return game_start(name)
         elif choice == "2":
             clear_screen()
             start = True
