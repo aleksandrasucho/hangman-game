@@ -30,18 +30,14 @@ The site can be accessed by this [link](https://hang-man-game55-2e55bd9f26a2.her
 
 * As a First Time Visitor to the Hangman game, my primary objective is to understand the game's concept and rules. I want to familiarize myself with the idea that I need to guess a hidden word by suggesting individual letters, while also comprehending the consequences of incorrect guesses.
 * As a First Time Visitor, I want to see how many attempts I have left when playing.
-* As a First Time Visitor, 
-* As a First Time Visitor, 
+* As a First Time Visitor, I want to choose the difficulty level, so I can tailor the game to my skill level.
+* As a First Time Visitor, I want feedback after each guess, so I can adjust my strategy.
+* As a First Time Visitor, I want the option to play again, so I can improve my skills and have another shot at winning.
 
 ### Returning Visitor Goals:
 
-* As a Returning Visitor, 
-* As a Returning Visitor, 
-* As a Returning Visitor, 
-
-### Frequent Visitor Goals:
-* As a Frequent User, 
-
+* As a Returning Visitor, I want to challenge myself with a different difficulty level, so I can experience varying levels of gameplay.
+* As a Returning Visitor, I want to easily find and access the "Rules" section, so I can refresh my memory if needed.
 ---
 
 ## Features
