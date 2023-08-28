@@ -135,7 +135,6 @@ The site can be accessed by this [link](https://hang-man-game55-2e55bd9f26a2.her
 
 ![Game Program](documentation/features/feature11-min.PNG)
 
-
 ---
 ## Technologies Used
 ### Languages:
@@ -150,9 +149,11 @@ The site can be accessed by this [link](https://hang-man-game55-2e55bd9f26a2.her
 #### Python modules/packages:
 
 ##### Standard library imports:
--
+- [random](https://docs.python.org/3/library/random.html) was used to implement pseudo-random letter generation.
+- [os](https://docs.python.org/3/library/os.html ) was used to clear the terminal before running the program.
+
 ##### Third-party imports:
--
+- [Colorama](https://pypi.org/project/colorama/) was used to add colors and styles to the project.
 #### Other tools:
 
 - [VSCode](https://code.visualstudio.com/) was used as the main tool to write and edit code.
