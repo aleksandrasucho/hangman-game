@@ -1,4 +1,4 @@
-#List of easy words
+# List of easy words
 easy_words = [
     'lumpy',
     'respect',
@@ -102,7 +102,7 @@ easy_words = [
     'mind'
 ]
 
-#List of difficult words
+# List of difficult words
 difficult_words = [
     'adventure',
     'balloon',

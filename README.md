@@ -183,7 +183,26 @@ The flowchart represents the logic of the application:
 
 
 ## Testing
--
+
+The program was tested constantly during its development process.
+Other users also tested it in order to spot possible grammatical mistakes that the code may present
+
+### Validators
+
+- **run.py**
+
+![Python Validator](documentation/pep8_validator/run-py-val-min.PNG)
+
+- **words.py**
+
+![Python Validator](documentation/pep8_validator/words-py-val-min.PNG)
+
+- **game_variables.py**
+
+![Python Validator](documentation/pep8_validator/game-var-val-min.PNG)
+
+Python Linter was ignored on art.py as the spaces are needed to form ASCII Art.
+
 ---
 ## Deployment
 

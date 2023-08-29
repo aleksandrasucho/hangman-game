@@ -16,7 +16,7 @@ def game_welcome():
     for line in logo:
         print(f"{Fore.CYAN+Style.BRIGHT}{line}")
     while True:
-        name = input(f"{Fore.GREEN+Style.BRIGHT}What is your name?\n").capitalize()
+        name = input(f"{Fore.GREEN+Style.BRIGHT}Your name?\n").capitalize()
         # Ensures that the user enters a name and this is not left blank
         if len(name) == 0:
             print(f"{Fore.RED+Style.BRIGHT}Your name must be letters only!")
@@ -54,9 +54,10 @@ def select_level():
         elif option == "D":
             return difficult_words
         else:
-            print(
-                f"{Fore.RED+Style.BRIGHT}Invalid option. Please choose 'E' for Easy or 'D' for Difficult."
+            error_message = (
+                f"{Fore.RED+Style.BRIGHT}Wrong:'E' for Easy,'D' for Difficult."
             )
+            print(error_message)
 
 
 def random_word(difficulty_level):
@@ -116,7 +117,7 @@ def game_start(name):
             clear_screen()
             start = True
         else:
-            print(f"{Fore.RED+Style.BRIGHT}Invalid option. Please choose 1 or 2")
+            print(f"{Fore.RED+Style.BRIGHT}Invalid option. Choose 1 or 2")
             clear_screen()
     if start:
         play_game(name)
@@ -153,27 +154,32 @@ def play_game(name):
 
         # Check if the player's input is a valid single letter
         if len(guess) != 1 or not guess.isalpha():
-            print(f"{Fore.RED+Style.BRIGHT}{name}, please enter a valid letter.")
+            print(f"{Fore.RED+Style.BRIGHT}{name}, enter a valid letter.")
         else:
             if guess in guessed_letters:
                 print(
-                    f"{Fore.RED+Style.BRIGHT}{name}, You've already guessed that letter."
+                    f"{Fore.RED+Style.BRIGHT}{name}, "
+                    f"you already guessed that letter."
                 )
             else:
                 guessed_letters.append(guess)
                 # Check if the guessed letter is in the word to guess
                 if guess in word_to_guess:
                     # Check if all letters in the word have been guessed
-                    if all(letter in guessed_letters for letter in word_to_guess):
+
+                    if all(letter in guessed_letters
+                            for letter in word_to_guess):
                         display_game_state(word_to_guess, guessed_letters)
                         display_you_win()
                         return True
                 else:
                     # Decrement remaining lives and display feedback
                     remaining_lives -= 1
-                    print(
-                        f"{Fore.RED+Style.BRIGHT}Incorrect guess! You have {remaining_lives} lives left."
+                    feedback_message = (
+                        f"{Fore.RED+Style.BRIGHT}Incorrect guess! "
+                        f"{remaining_lives} lives left."
                     )
+                    print(feedback_message)
 
     # Game over: no remaining lives
     clear_screen()
@@ -185,9 +191,7 @@ def display_game_over(word_to_guess):
     """Displayes Game Over logo"""
     for you_lose in game_over:
         print(f"{Fore.RED+Style.BRIGHT}{you_lose}")
-    print(
-        f"{Fore.RED+Style.BRIGHT}Sorry the word you couldn't guess was: {word_to_guess}"
-    )
+    print(f"{Fore.RED+Style.BRIGHT}Word not guessed: {word_to_guess}")
 
 
 def display_you_win():
@@ -211,7 +215,7 @@ def main():
         if not play_again():
             # Clear the terminal
             clear_screen()
-            print(f"{Fore.GREEN+Style.BRIGHT}Thanks for playing the game {name}!")
+            print(f"{Fore.GREEN+Style.BRIGHT}Thanks for playing {name}!")
             break
         else:
             clear_screen()
