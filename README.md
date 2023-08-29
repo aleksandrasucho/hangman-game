@@ -174,12 +174,17 @@ The flowchart represents the logic of the application:
 
 ## Bugs
 + **Solved bugs**
-1. The function ```choosing_article(word)``` did not give the correct article if the noun was uncountable.
+1. I was having issues with deployment
 
-    - *Solutions:* rewrote function with using args; rather than checking only the beginning of the word, it checks all arguments and presents the correct  article
+    - *Solutions:* I noticed and corrected wrong spelling in the pip3 freeze > requirements.txt 
+
 
 + **Unsolved bugs**
+    - None
 
++ **Mistakes**
+    - Mistakes were made while committing changes. I used past simple tense in commits due to the habit when I just started working on this project.
+    - While progressing in my code I learned to use present simple tense in commits.
 
 
 ## Testing
