@@ -162,6 +162,8 @@ The site can be accessed by this [link](https://hang-man-game55-2e55bd9f26a2.her
 - [GitHub](https://github.com/) was used to host the code of the website.
 
 ---
+## Future Features
+- I would like to implement leaderboard functionality (calculations etc).
 
 ## Bugs
 -
@@ -170,7 +172,104 @@ The site can be accessed by this [link](https://hang-man-game55-2e55bd9f26a2.her
 -
 ---
 ## Deployment
--
+
+- The program was deployed to [Heroku](https://dashboard.heroku.com).
+- The program can be reached by the [link](https://hang-man-game55-2e55bd9f26a2.herokuapp.com/)
+### To deploy the project as an application that can be **run locally**:
+
+*Note:*
+  1. This project requires you to have Python installed on your local PC:
+  - `sudo apt install python3`
+
+  1. You will also need pip installed to allow the installation of modules the application uses.
+  - `sudo apt install python3-pip`
+
+Create a local copy of the GitHub repository by following one of the two processes below:
+
+- Download ZIP file:
+  1. Go to the [GitHub Repo page](https://github.com/aleksandrasucho/hangman-game).
+  1. Click the Code button and download the ZIP file containing the project.
+  1. Extract the ZIP file to a location on your PC.
+
+- Clone the repository:
+  1. Open a folder on your computer with the terminal.
+  1. Run the following command
+  - `git clone https://github.com/aleksandrasucho/hangman-game.git`
+
+- Alternatively, if using Gitpod, you can click below to create your own workspace using this repository.
+
+  [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/new#https://github.com/aleksandrasucho/hangman-game)
+
+ 1. Install Python module dependencies:
+    1. Navigate to the folder hangman-game by executing the command:
+        - `cd hangman-game`
+    1. Run the command pip install -r requirements.txt
+        - `pip3 install -r requirements.txt`
+
+**The app was deployed to Heroku**
+
+### To deploy the project to Heroku so it can be run as a remote web application:
+- Clone the repository:
+  1. Open a folder on your computer with the terminal.
+  1. Run the following command
+  - `git clone https://github.com/aleksandrasucho/hangman-game.git`
+
+  1. Create your own GitHub repository to host the code.
+  1. Run the command `git remote set-url origin <Your GitHub Repo Path>` to set the remote repository location to your repository.
+
+  1. Push the files to your repository with the following command:
+  `git push`
+  1. Create a Heroku account if you don't already have one here [Heroku](https://dashboard.heroku.com).
+  1. Create a new Heroku application on the following page here [New Heroku App](https://dashboard.heroku.com/apps):
+
+      - ![New Heroku App](documentation/deployment/dep1-min.PNG)
+
+ 1. Go to the Deploy tab:
+
+      - ![Deploy Tab](documentation/deployment/dep2-min.PNG)
+
+      - ![Deployment Method](documentation/deployment/dep3-min.PNG)
+
+1. Link your GitHub account and connect the application to the repository you created.
+
+      - ![Link GitHub account](documentation/deployment/link-to-github-min.PNG)
+
+1. Go to the Settings tab:
+  
+      - ![Settings Tab](documentation/deployment/go-to-settings-min.PNG)
+
+ 1. Click "Add buildpack":
+
+      - ![Add Buildpack](documentation/deployment/add-buildpacks-min.PNG)
+
+  1. Add the Python and Node.js buildpacks in the following order:
+
+      - ![Add Python and Node.js](documentation/deployment/add-python-nodejs-min.PNG)
+
+  1. Click "Reveal Config Vars."
+
+      - ![Reveal Config Vars](documentation/deployment/config-vars-min.PNG)
+
+  1. Add 1 new Config Vars:
+      - Key: PORT Value: 8000
+      - *This Config was provided by [CODE INSTITUTE](https://codeinstitute.net/)*.
+
+  1. Go back to the Deploy tab:
+
+      - ![Deploy Tab](documentation/deployment/dep2-min.PNG)
+
+  1. Click "Deploy Branch":
+
+      - ![Deploy Branch](documentation/deployment/deploy-min.PNG)
+
+      - Wait for the completion of the deployment.
+
+      - ![Deploying Branch](documentation/deployment/wait-for-deploy-min.PNG)
+
+  1. Click "Open app" to launch the application inside a web page.
+
+      - ![View Button](documentation/deployment/view-game-min.PNG)
+
 ## Credits
 
 - Color formatting: [Colorama](https://pypi.org/project/colorama/).
