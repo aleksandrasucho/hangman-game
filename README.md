@@ -136,6 +136,13 @@ The site can be accessed by this [link](https://hang-man-game55-2e55bd9f26a2.her
 ![Game Program](documentation/features/feature11-min.PNG)
 
 ---
+
+## Flowchart
+
+The flowchart represents the logic of the application:
+
+  ![Flash Card Page](documentation/flowchart-min.png)
+
 ## Technologies Used
 ### Languages:
 
@@ -166,8 +173,15 @@ The site can be accessed by this [link](https://hang-man-game55-2e55bd9f26a2.her
 - I would like to implement leaderboard functionality (calculations etc).
 
 ## Bugs
--
----
++ **Solved bugs**
+1. The function ```choosing_article(word)``` did not give the correct article if the noun was uncountable.
+
+    - *Solutions:* rewrote function with using args; rather than checking only the beginning of the word, it checks all arguments and presents the correct  article
+
++ **Unsolved bugs**
+
+
+
 ## Testing
 -
 ---
