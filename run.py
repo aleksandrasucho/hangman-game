@@ -118,7 +118,7 @@ def game_start(name):
             start = True
         else:
             print(f"{Fore.RED+Style.BRIGHT}Invalid option. Choose 1 or 2")
-            clear_screen()
+            
     if start:
         play_game(name)
 
@@ -202,8 +202,14 @@ def display_you_win():
 
 def play_again():
     """Play again option"""
-    play_again_input = input("Do you want to play again? (Y/N): ").lower()
-    return play_again_input == "y"
+    while True:
+        play_again_input = input("Do you want to play again? (Y/N): ").lower()
+        if play_again_input == "y":
+            return True
+        elif play_again_input == "n":
+            return False
+        else:
+            print(f"{Fore.RED+Style.BRIGHT}Invalid input. Enter 'Y' or 'N'.")
 
 
 def main():
