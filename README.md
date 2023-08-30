@@ -167,6 +167,7 @@ The flowchart represents the logic of the application:
 
 - [VSCode](https://code.visualstudio.com/) was used as the main tool to write and edit code.
 - [GitHub](https://github.com/) was used to host the code of the website.
+- [Heroku](https://dashboard.heroku.com) was used for deployment.
 
 ---
 ## Future Features
