@@ -61,7 +61,8 @@ def select_level():
 
 
 def random_word(difficulty_level):
-    """Returns a random word based on selected difficulty,
+    """
+    Returns a random word based on selected difficulty,
     the words are contained in an imported list.
     """
     if difficulty_level == easy_words:
